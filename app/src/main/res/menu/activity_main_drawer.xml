@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_countries"
+            android:title="Countries">
+            <menu>
+                <group android:id="@+id/group_usa">
+                    <item
+                        android:id="@+id/nav_states_usa"
+                        android:title="USA">
+                        <menu>
+                            <group android:id="@+id/group_states_usa">
+                                <item
+                                    android:id="@+id/nav_cities_ny"
+                                    android:title="New York" />
+                                <item
+                                    android:id="@+id/nav_cities_ca"
+                                    android:title="California" />
+                                <!-- Add more cities in USA as needed -->
+                            </group>
+                        </menu>
+                    </item>
+                </group>
+                <group android:id="@+id/group_uk">
+                    <item
+                        android:id="@+id/nav_states_uk"
+                        android:title="UK">
+                        <menu>
+                            <group android:id="@+id/group_states_uk">
+                                <item
+                                    android:id="@+id/nav_cities_london"
+                                    android:title="London" />
+                                <item
+                                    android:id="@+id/nav_cities_manchester"
+                                    android:title="Manchester" />
+                                <!-- Add more cities in UK as needed -->
+                            </group>
+                        </menu>
+                    </item>
+                </group>
+                <!-- Add more countries and their states as needed -->
+            </menu>
+        </item>
+    </group>
+</menu>
